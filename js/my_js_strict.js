@@ -93,6 +93,7 @@ var random = [];
 					on=0;
 					off=0;
 					strict=1;
+			    		alert("You Lose!!! Wrong Senquence Entered. \n Play Again");
 					x=0;
                         start();
                     }
