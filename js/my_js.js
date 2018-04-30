@@ -93,7 +93,7 @@ var random = [];
                             clicked = [];
                             j = 0;
 							attempts--;
-							if(attempts==4){
+							if(attempts==0){
 							alert("YOU LOSE!!!! \n You are Out of Attempts. Play Again\n");
 							random = [];
 							litID = [];
