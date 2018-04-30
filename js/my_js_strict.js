@@ -7,9 +7,8 @@ var random = [];
     var count = 1;
     var on;
     var off;
-    var strict;
+    var strict=1;
     var x;
-	var attempts=5;
     function change1() {
         if (count <= 10) {
             off = 400;
@@ -84,7 +83,18 @@ var random = [];
                 }
                 else {
                     if (strict == 1) {
-                        location.reload();
+					random = [];
+					litID = [];
+					lit='';
+					clicked = [];
+					i=0;
+					j=0;
+					count = 1;
+					on=0;
+					off=0;
+					strict=1;
+					x=0;
+                        start();
                     }
                     else {
                         setTimeout(function () {
@@ -92,38 +102,22 @@ var random = [];
                             litID = [];
                             clicked = [];
                             j = 0;
-							attempts--;
-							if(attempts==4){
-							alert("YOU LOSE!!!! \n You are Out of Attempts. Play Again\n");
-							random = [];
-							litID = [];
-							lit='';
-							clicked = [];
-							i=0;
-							j=0;
-							count = 1;
-							on=0;
-							off=0;
-							strict=0;
-							x=0;
-							$('#count').text(count);
-							}
                             change1();
                         }, 1000);
                     }
                 }
     }
   }        
-		
-        //to start the game
-        $('#start').on('click', function () {
+		function start(){
 			count=1;
 			for(i=0; i<20; i++) {
 			random[i] = Math.ceil((Math.random() * 4));
 			}
             $('#count').text(count);
             change1();
-        });
+		}
+        //to start the game
+        $('#start').on('click', start);
         //user to play
         $('#one').on('click', function () {
             $('#one').addClass('light1');
