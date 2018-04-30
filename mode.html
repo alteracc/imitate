@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>IMITATE</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+	<style>
+	body{
+	background-color: #fefefe;
+	}
+	h4{
+	color: black;
+	}
+		#box{
+			margin-left: 20%;
+			margin-top: 20%;
+			width: 60%;
+			height: 50%;
+		}
+		a{
+		text-decoration: none;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-3.3.js" ></script>
+	<script type="text/javascript" src="js/my_js.js" ></script>	
+</head>
+<body>
+	<div class="container" id="box">
+		<div class="panel panel-primary">
+		<div class="panel-heading" align="center">Select Mode </div>
+		</div>
+		<br />
+		<div class="row" id="infobox">
+			<div class="col-md-6 col-lg-6"><h4>Max.Attempts Given for Wrong Sequence = 5 <br /><br /> If Entered Sequence is incorrect, then Sequence and Score will remain same but no of attempts is reduced by 1.</h4></div>
+			<div class="col-md-6 col-lg-6"><h4>No Extra Attempts for Wrong sequence. <br /><br /> If Entered Sequence is incorrect, then Game will be restarted with Score 1.</h4></div>
+		</div>
+		<br />
+		<div class="row">
+		<div id="btn1" class="col-md-6 col-lg-6"><a href="play.html"><button class="btn btn-block btn-success">EASY MODE</button></a></div>
+		<div id="btn2" class="col-md-6 col-lg-6"><a href="play_strict.html"><button class="btn btn-block btn-danger">STRICT MODE</button></a></div>
+		</div>
+	</div>
+</body>
+</html>
