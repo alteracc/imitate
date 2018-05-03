@@ -1,6 +1,8 @@
-                          <b>IMITATE</b>
+                          IMITATE
 Play this game online by clicking this link below: 
+
       https://alteracc.github.io/imitate
+      
 It is a web game ( web version of the Hardware based game SIMON GAME).
 It  is developed using HTML,CSS(Bootstrap) and JavaScript(jQuery).
 Rules:
